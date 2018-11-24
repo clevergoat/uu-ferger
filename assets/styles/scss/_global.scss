@@ -7,6 +7,11 @@ Stylesheet: Global Stylesheet
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+
+.container {
+	@include xy-grid-container;
+  }
+  
 .page-title {
 	
 	// Remove Foundation vcard styling from author page titles

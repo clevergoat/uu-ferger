@@ -4,12 +4,12 @@
  */
  ?>
 
-<div id="sidebar1" class="sidebar small-12 medium-4 large-4 cell" role="complementary">
-
+<div id="sidebar1" class="sidebar small-12 medium-4 large-4 cell"  data-sticky-container role="complementary">
+<div class="sticky sticky-sidebar" data-sticky data-anchor="main-sticky">
 	<?php if ( is_active_sidebar( 'sidebar1' ) ) : ?>
 
 		<?php dynamic_sidebar( 'sidebar1' ); ?>
 
 	<?php endif; ?>
-
+	</div>
 </div>
