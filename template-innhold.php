@@ -1,6 +1,6 @@
 <?php 
 /*
-Template Name: Hjem
+Template Name: Innhold
 */
 
 get_header(); ?>

@@ -7,11 +7,35 @@ Stylesheet: Global Stylesheet
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+i .fas {
+	color: #00b3db;
+}
+
+.content {
+	margin-top: 3rem;
+}
+
+.card {
+	box-sizing: border-box;
+	&:hover {
+		background-color:rgba(228,233,236,.3);
+		border: 1px solid #e4e9ec;
+	}
+}
+
+.card-divider {
+	background: none;
+	justify-content: center;
+}
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
 
 .container {
 	@include xy-grid-container;
   }
-  
+
 .page-title {
 	
 	// Remove Foundation vcard styling from author page titles
@@ -417,6 +441,7 @@ SIDEBARS & ASIDES
 FOOTER STYLES
 *********************/
 .footer {
+	background-color: #222;
 	clear: both;
 	margin-top: 1em;
 }

@@ -89,7 +89,7 @@ $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
 $global-weight-bold: bold;
-$global-radius: 0;
+$global-radius: 10px;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem;
 $global-text-direction: ltr;
@@ -147,11 +147,17 @@ $header-styles: (
     'h6': ('font-size': 16),
   ),
   medium: (
-    'h1': ('font-size': 48),
-    'h2': ('font-size': 40),
-    'h3': ('font-size': 31),
-    'h4': ('font-size': 25),
-    'h5': ('font-size': 20),
+    /*'h1': ('font-size': 48),36
+    'h2': ('font-size': 40),30
+    'h3': ('font-size': 31),24
+    'h4': ('font-size': 25),20
+    'h5': ('font-size': 20),18  
+    'h6': ('font-size': 16),16*/
+    'h1': ('font-size': 36),
+    'h2': ('font-size': 30),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 20),
+    'h5': ('font-size': 18),  
     'h6': ('font-size': 16),
   ),
 );
@@ -325,10 +331,10 @@ $callout-link-tint: 30%;
 // 14. Card
 // --------
 
-$card-background: $white;
+$card-background: none;
 $card-font-color: $body-font-color;
 $card-divider-background: $light-gray;
-$card-border: 1px solid $light-gray;
+$card-border: 1px solid transparent;
 $card-shadow: none;
 $card-border-radius: $global-radius;
 $card-padding: $global-padding;
@@ -371,7 +377,7 @@ $drilldown-arrow-size: 6px;
 // ------------
 
 $dropdown-padding: 1rem;
-$dropdown-background: $body-background;
+$dropdown-background: $white;
 $dropdown-border: 1px solid $medium-gray;
 $dropdown-font-size: 1rem;
 $dropdown-width: 300px;
@@ -391,11 +397,11 @@ $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-arrow-padding: 1.5rem;
 $dropdownmenu-min-width: 200px;
 $dropdownmenu-background: $white;
-$dropdownmenu-submenu-background: $dropdownmenu-background;
+$dropdownmenu-submenu-background: $white;
 $dropdownmenu-padding: $global-menu-padding;
 $dropdownmenu-nested-margin: 0;
 $dropdownmenu-submenu-padding: $dropdownmenu-padding;
-$dropdownmenu-border: 1px solid $medium-gray;
+$dropdownmenu-border: none;
 $dropdown-menu-item-color-active: get-color(primary);
 $dropdown-menu-item-background-active: transparent;
 
@@ -846,7 +852,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0.5rem;
-$topbar-background: $light-gray;
+$topbar-background: #f5f7f9;
 $topbar-submenu-background: $topbar-background;
 $topbar-title-spacing: 0.5rem 1rem 0.5rem 0;
 $topbar-input-width: 200px;
