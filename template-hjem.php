@@ -7,7 +7,7 @@ get_header(); ?>
 	
 	<div class="content">
 	
-		<div class="inner-content container grid-x grid-margin-x grid-padding-x">
+		<div class="inner-content container">
 	
 		    <main id="main-sticky" class="main grid-x grid-padding-x small-12" role="main">
 <?php
@@ -34,7 +34,7 @@ if ( $query->have_posts() ) {
 		$query->the_post();
 		// do something
 		
-		echo '<div class="cell medium-3 text-center">';
+		echo '<div class="cell small-6 medium-3 text-center">';
 		echo '<a href="' . get_the_permalink() . '">';
 		echo '<div class="card">';
 		echo '<div class="card-divider">';
