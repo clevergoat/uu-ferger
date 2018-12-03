@@ -9,10 +9,10 @@
 	<div class="top-bar" data-sticky data-sticky-on="small" data-options="marginTop:0;" style="width: 100%;" id="top-bar-menu">
 		<div class="top-bar-left float-left">
 		<div class="logo float-left">
-				<img src="http://universellutforming.org/wp-content/themes/uu/images/logo.png">
+				<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/12/uu-logo.png">
 			</div>
 			<div class="logo float-left">
-				<img src="http://localhost:8888/UU-Ferger/wp-content/uploads/2018/12/sdir_logo.png">
+				<img src="<?php echo home_url(); ?>/wp-content/uploads/2018/12/sdir_logo.png">
 			</div>
 			<!--<ul class="menu">
 				<li><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></li>
