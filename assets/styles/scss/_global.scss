@@ -28,6 +28,18 @@ Bildelist
 Top Bar / Menu
 *********************/
 
+.logo {
+	height: 96px;
+	padding: 1.25rem;
+	img {
+		height: 100%;
+	}
+	@include breakpoint(small only) {
+		height: 55px;
+		padding: 0.3em .75rem;
+	}
+}
+
 .top-bar {
 	border-bottom: 1px solid $light-gray;
 }
@@ -43,19 +55,26 @@ Top Bar / Menu
 }
 
 .sticky-sidebar {
-	z-index: 1;
+	z-index: 1 !important;
+	background-color: $white;
+	border: 1px solid $light-gray;
+	padding: 1rem;
 }
 
-.dropdown.menu>li.is-dropdown-submenu-parent>a:hover {
-		&:after {
-			border-color: $white transparent transparent transparent !important;
-		}
+.is-dropdown-submenu-parent a:after {
+	right: 10px !important;
 }
 
 .dropdown.menu .is-active>a {
 	&:after {
 		border-color: $white transparent transparent transparent !important;
 	}
+}
+
+.dropdown.menu>li.is-dropdown-submenu-parent>a:hover {
+		&:after {
+			border-color: $white transparent transparent transparent !important;
+		}
 }
 
 .dropdown .is-dropdown-submenu a {
