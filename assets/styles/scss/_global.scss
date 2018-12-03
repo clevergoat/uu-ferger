@@ -5,6 +5,56 @@ Stylesheet: Global Stylesheet
 *************************************************/
 
 /*********************
+EZ Toc Widget
+*********************/
+
+.ez-toc-widget-container li.active>a {
+	color: $white;
+}
+#ezw_tco-2 .ez-toc-widget-container ul.ez-toc-list li.active::before,
+.ez-toc-widget-container ul.ez-toc-list li.active::before {
+	background-color: $primary-color !important;
+}
+
+/*********************
+Top Bar / Menu
+*********************/
+
+.top-bar {
+	border-bottom: 1px solid $light-gray;
+}
+
+.top-bar-right ul li a, .off-canvas ul li a {
+	&:hover {
+		background-color: $primary-color;
+		color: $white;
+	}
+}
+.sticky, .is-dropdown-submenu {
+	z-index: 5;
+}
+
+.sticky-sidebar {
+	z-index: 1;
+}
+
+.dropdown.menu>li.is-dropdown-submenu-parent>a:hover {
+		&:after {
+			border-color: $white transparent transparent transparent !important;
+		}
+}
+
+.dropdown.menu .is-active>a {
+	&:after {
+		border-color: $white transparent transparent transparent !important;
+	}
+}
+
+.dropdown .is-dropdown-submenu a {
+	line-height: 1.6;
+}
+
+/*********************
 POSTS & CONTENT STYLES
 *********************/
 i .fas {
@@ -13,6 +63,7 @@ i .fas {
 
 .content {
 	margin-top: 3rem;
+    min-height: calc(100vh - 150px);
 }
 
 .card {
@@ -26,6 +77,8 @@ i .fas {
 .card-divider {
 	background: none;
 	justify-content: center;
+	padding: 3rem 1rem 1rem;
+	color: $primary-color;
 }
 
 /*********************
@@ -427,6 +480,7 @@ COMMENT FORM STYLES
 SIDEBARS & ASIDES
 *********************/
 .sidebar {
+	
 	li{
 		list-style: none;
 	}
@@ -443,6 +497,9 @@ FOOTER STYLES
 .footer {
 	clear: both;
 	margin-top: 1em;
+	padding-top: 2rem;
+	background-color: $white;
+	border-top: 1px solid $light-gray;
 }
 	
 /*********************
