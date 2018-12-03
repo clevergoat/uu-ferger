@@ -19,7 +19,7 @@ get_header(); ?>
 			?>
 			
 			<?php if ( $wpb_all_query->have_posts() ) : ?>
-			<ul class="no-bullet">
+			<ul class="no-bullet bildelist">
 			<?php while ( $wpb_all_query->have_posts() ) : $wpb_all_query->the_post(); ?>
 				<?php
 					$images =& get_children( array (
