@@ -27,17 +27,19 @@ get_header(); ?>
 						'post_type' => 'attachment',
 						'post_mime_type' => 'image',
 						'orderby'=> 'title',
-						'order' => 'ASC',
+						'order' => 'ASC'
 					));
 
 					if ( empty($images) ) {
 						// no attachments here
 					} else {
 						foreach ( $images as $attachment_id => $attachment ) {
+							if ( current(explode(' ', wp_get_attachment_caption( $attachment_id, 'caption') ) ) == 'Figur') {
 							echo '<li>';
 							echo '<a href="' . get_the_permalink() . '">' . wp_get_attachment_caption( $attachment_id, 'caption' ) . '</a>';
 							echo '</li>';
 						}
+					}
 					}
 				?>
 			<?php endwhile; ?>
