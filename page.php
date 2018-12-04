@@ -11,7 +11,7 @@ get_header(); ?>
 	
 		<div class="inner-content container grid-x grid-margin-x grid-padding-x">
 	
-		    <main id="main-sticky" class="main small-12 large-8 medium-8 cell" role="main">
+		    <main id="main-sticky" class="main small-12 cell" role="main">
 				
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
